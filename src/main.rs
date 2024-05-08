@@ -1,6 +1,5 @@
 use anyhow::Context;
 use clap::Parser;
-use std::fmt::format;
 use std::fs::File;
 use std::io::{BufReader, Read};
 
@@ -37,10 +36,15 @@ fn main() {
         let mut ascii_string = String::new();
 
         for chunk in buffer.chunks(2) {
-            let first_byte  = chunk.get(0).or(Some(&b'0')).unwrap();
-            let second_byte = chunk.get(1).or(Some(&b'0')).unwrap();
+            let first_byte  = chunk.get(0).unwrap_or(&b'0');
+            let second_byte = chunk.get(1).unwrap_or(&b'0');
 
-            let s = format!("{:x}{:x} ",first_byte,second_byte);
+            if *first_byte as u8 == 0 && *second_byte as u8 == 0 {
+                continue;
+            }
+
+            let mut s = format!("{:x}{:x} ",first_byte,second_byte);
+            s = format!("{:0>5}",s);
             hex_string.push_str(&s);
 
 
