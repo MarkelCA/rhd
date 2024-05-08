@@ -34,22 +34,35 @@ fn main() {
         }
 
         let mut hex_string = String::new();
+        let mut ascii_string = String::new();
 
-        for b in buffer.chunks(2) {
-            let s = format!(
-                "{:x}{:x} ",
-                b.get(0).or(Some(&b'0')).unwrap(),
-                b.get(1).or(Some(&b'0')).unwrap()
-                );
-            hex_string.push_str(&s)
+        for chunk in buffer.chunks(2) {
+            let first_byte  = chunk.get(0).or(Some(&b'0')).unwrap();
+            let second_byte = chunk.get(1).or(Some(&b'0')).unwrap();
+
+            let s = format!("{:x}{:x} ",first_byte,second_byte);
+            hex_string.push_str(&s);
+
+
+            ascii_string.push(get_printable(*first_byte));
+            ascii_string.push(get_printable(*second_byte));
+
+            // ascii_string.push();
         }
 
-        println!("{:0>8x} {}", line*CHUNK_SIZE, hex_string);
+        println!("{:0>8x}: {:<40} | {}", line*CHUNK_SIZE, hex_string,ascii_string);
 
         line+=1;
     }
 
-    
-    
+    fn get_printable(byte: u8) -> char {
+        match byte {
+            32..=127 => char::from_u32(byte as u32).unwrap(),
+            _ => '.'
+        }
+    }
+
+
+
 
 }
