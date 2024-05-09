@@ -48,3 +48,4 @@ $ cargo run -q assets/binary
 ## Todos
 - [ ] Add iterator return instead of implicit stdout prints
 - [ ] Allow piped in input instead of filename
+- [ ] Optimizations + benchmarks
