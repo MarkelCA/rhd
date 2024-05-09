@@ -35,13 +35,11 @@ fn main() {
         let mut hex_string = String::new();
         let mut ascii_string = String::new();
 
-        for chunk in buffer.chunks(2) {
+        let b2 = buffer[0..n].to_vec();
+
+        for chunk in b2.chunks(2) {
             let first_byte  = chunk.get(0).unwrap_or(&b'0');
             let second_byte = chunk.get(1).unwrap_or(&b'0');
-
-            if *first_byte as u8 == 0 && *second_byte as u8 == 0 {
-                continue;
-            }
 
             let mut s = format!("{:x}{:x} ",first_byte,second_byte);
             s = format!("{:0>5}",s);
