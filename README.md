@@ -46,4 +46,6 @@ $ cargo run -q assets/binary
 ```
 
 ## Todos
+- [ ] Fix trailing 0 character
 - [ ] Add iterator return instead of implicit stdout prints
+- [ ] Allow piped in input instead of filename
