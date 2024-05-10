@@ -1,6 +1,7 @@
 # rhd
-Rust Hexdump
+Hex dumper written in Rust, inspired by `xxd`. 
 
+Disclaimer: This is not a complete reimplementation, but a naive test project meant to learn the language.
 ## Usage
 ```
 Usage: rhd <FILE_PATH>
