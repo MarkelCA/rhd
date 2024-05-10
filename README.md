@@ -46,7 +46,6 @@ $ cargo run -q assets/binary
 ```
 
 ## Todos
-- [X] Add iterator return instead of implicit stdout prints
-    - [ ] Make the reader lazy loading
+- [X] Return a lazy loading iterator instead of implicit printing to stdout
 - [ ] Optimizations + benchmarks
 - [ ] Allow piped in input instead of filename

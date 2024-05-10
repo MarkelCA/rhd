@@ -1,0 +1,998 @@
+desc: (none)
+cmd: ./target/release/rhd /home/markel/awscliv2.zip
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=379358
+mem_heap_B=5100
+mem_heap_extra_B=388
+mem_stacks_B=0
+heap_tree=peak
+n7: 5100 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n7: 3812 0x129BA7: _ZN5alloc7raw_vec11finish_grow17h66bc1c0697720e51E.llvm.16429142488755138199 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 2208 0x12A529: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 2208 0x14550E: clap_builder::mkeymap::MKeyMap::push (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 2208 0x120FF4: clap_builder::builder::command::Command::arg_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 2208 0x11CD33: <rhd::Args as clap_builder::derive::CommandFactory>::command (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 2208 0x11C2BA: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 2208 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n1: 2208 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+         n1: 2208 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+          n0: 2208 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n5: 672 0x12A1DF: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n2: 192 0x1470D5: clap_builder::parser::matches::matched_arg::MatchedArg::new_val_group (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 96 0x160798: clap_builder::parser::parser::Parser::start_custom_arg (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 96 0x15EF00: clap_builder::parser::parser::Parser::react (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 96 0x15E536: clap_builder::parser::parser::Parser::resolve_pending (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 96 0x15A410: clap_builder::parser::parser::Parser::get_matches_with (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n1: 96 0x12180B: clap_builder::builder::command::Command::_do_parse (in /home/markel/estudio/rust/rhd/target/release/rhd)
+         n1: 96 0x117034: clap_builder::builder::command::Command::get_matches_from (in /home/markel/estudio/rust/rhd/target/release/rhd)
+          n1: 96 0x11C2E1: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+           n1: 96 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+            n1: 96 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+             n1: 96 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+              n0: 96 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 96 0x160887: clap_builder::parser::parser::Parser::start_custom_arg (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 96 0x15EF00: clap_builder::parser::parser::Parser::react (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 96 0x15E536: clap_builder::parser::parser::Parser::resolve_pending (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 96 0x15A410: clap_builder::parser::parser::Parser::get_matches_with (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n1: 96 0x12180B: clap_builder::builder::command::Command::_do_parse (in /home/markel/estudio/rust/rhd/target/release/rhd)
+         n1: 96 0x117034: clap_builder::builder::command::Command::get_matches_from (in /home/markel/estudio/rust/rhd/target/release/rhd)
+          n1: 96 0x11C2E1: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+           n1: 96 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+            n1: 96 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+             n1: 96 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+              n0: 96 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n2: 192 0x147126: clap_builder::parser::matches::matched_arg::MatchedArg::new_val_group (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 96 0x160798: clap_builder::parser::parser::Parser::start_custom_arg (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 96 0x15EF00: clap_builder::parser::parser::Parser::react (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 96 0x15E536: clap_builder::parser::parser::Parser::resolve_pending (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 96 0x15A410: clap_builder::parser::parser::Parser::get_matches_with (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n1: 96 0x12180B: clap_builder::builder::command::Command::_do_parse (in /home/markel/estudio/rust/rhd/target/release/rhd)
+         n1: 96 0x117034: clap_builder::builder::command::Command::get_matches_from (in /home/markel/estudio/rust/rhd/target/release/rhd)
+          n1: 96 0x11C2E1: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+           n1: 96 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+            n1: 96 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+             n1: 96 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+              n0: 96 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 96 0x160887: clap_builder::parser::parser::Parser::start_custom_arg (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 96 0x15EF00: clap_builder::parser::parser::Parser::react (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 96 0x15E536: clap_builder::parser::parser::Parser::resolve_pending (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 96 0x15A410: clap_builder::parser::parser::Parser::get_matches_with (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n1: 96 0x12180B: clap_builder::builder::command::Command::_do_parse (in /home/markel/estudio/rust/rhd/target/release/rhd)
+         n1: 96 0x117034: clap_builder::builder::command::Command::get_matches_from (in /home/markel/estudio/rust/rhd/target/release/rhd)
+          n1: 96 0x11C2E1: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+           n1: 96 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+            n1: 96 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+             n1: 96 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+              n0: 96 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 192 0x14724D: clap_builder::parser::matches::matched_arg::MatchedArg::append_val (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n2: 192 0x133E4F: clap_builder::parser::arg_matcher::ArgMatcher::add_val_to (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 96 0x15E216: clap_builder::parser::parser::Parser::push_arg_values (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 96 0x15EF22: clap_builder::parser::parser::Parser::react (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 96 0x15E536: clap_builder::parser::parser::Parser::resolve_pending (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n1: 96 0x15A410: clap_builder::parser::parser::Parser::get_matches_with (in /home/markel/estudio/rust/rhd/target/release/rhd)
+         n1: 96 0x12180B: clap_builder::builder::command::Command::_do_parse (in /home/markel/estudio/rust/rhd/target/release/rhd)
+          n1: 96 0x117034: clap_builder::builder::command::Command::get_matches_from (in /home/markel/estudio/rust/rhd/target/release/rhd)
+           n1: 96 0x11C2E1: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+            n1: 96 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+             n1: 96 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+              n1: 96 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+               n0: 96 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 96 0x16080D: clap_builder::parser::parser::Parser::start_custom_arg (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 96 0x15EF00: clap_builder::parser::parser::Parser::react (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 96 0x15E536: clap_builder::parser::parser::Parser::resolve_pending (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n1: 96 0x15A410: clap_builder::parser::parser::Parser::get_matches_with (in /home/markel/estudio/rust/rhd/target/release/rhd)
+         n1: 96 0x12180B: clap_builder::builder::command::Command::_do_parse (in /home/markel/estudio/rust/rhd/target/release/rhd)
+          n1: 96 0x117034: clap_builder::builder::command::Command::get_matches_from (in /home/markel/estudio/rust/rhd/target/release/rhd)
+           n1: 96 0x11C2E1: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+            n1: 96 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+             n1: 96 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+              n1: 96 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+               n0: 96 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 96 0x14613D: clap_builder::util::flat_map::FlatMap<K,V>::extend_unchecked (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 96 0x13CF52: clap_builder::parser::validator::Validator::validate (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 96 0x15A4B3: clap_builder::parser::parser::Parser::get_matches_with (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 96 0x12180B: clap_builder::builder::command::Command::_do_parse (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 96 0x117034: clap_builder::builder::command::Command::get_matches_from (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n1: 96 0x11C2E1: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+         n1: 96 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+          n1: 96 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+           n1: 96 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+            n0: 96 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 448 0x12A603: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 448 0x1465FB: clap_builder::util::flat_map::Entry<K,V>::or_insert (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 448 0x133A5D: clap_builder::parser::arg_matcher::ArgMatcher::start_custom_arg (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 448 0x160798: clap_builder::parser::parser::Parser::start_custom_arg (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 448 0x15EF00: clap_builder::parser::parser::Parser::react (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 448 0x15E536: clap_builder::parser::parser::Parser::resolve_pending (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n1: 448 0x15A410: clap_builder::parser::parser::Parser::get_matches_with (in /home/markel/estudio/rust/rhd/target/release/rhd)
+         n1: 448 0x12180B: clap_builder::builder::command::Command::_do_parse (in /home/markel/estudio/rust/rhd/target/release/rhd)
+          n1: 448 0x117034: clap_builder::builder::command::Command::get_matches_from (in /home/markel/estudio/rust/rhd/target/release/rhd)
+           n1: 448 0x11C2E1: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+            n1: 448 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+             n1: 448 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+              n1: 448 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+               n0: 448 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 256 0x12A450: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 256 0x1471F5: clap_builder::parser::matches::matched_arg::MatchedArg::append_val (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n2: 256 0x133E4F: clap_builder::parser::arg_matcher::ArgMatcher::add_val_to (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 128 0x15E216: clap_builder::parser::parser::Parser::push_arg_values (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 128 0x15EF22: clap_builder::parser::parser::Parser::react (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 128 0x15E536: clap_builder::parser::parser::Parser::resolve_pending (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n1: 128 0x15A410: clap_builder::parser::parser::Parser::get_matches_with (in /home/markel/estudio/rust/rhd/target/release/rhd)
+         n1: 128 0x12180B: clap_builder::builder::command::Command::_do_parse (in /home/markel/estudio/rust/rhd/target/release/rhd)
+          n1: 128 0x117034: clap_builder::builder::command::Command::get_matches_from (in /home/markel/estudio/rust/rhd/target/release/rhd)
+           n1: 128 0x11C2E1: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+            n1: 128 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+             n1: 128 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+              n1: 128 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+               n0: 128 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 128 0x16080D: clap_builder::parser::parser::Parser::start_custom_arg (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 128 0x15EF00: clap_builder::parser::parser::Parser::react (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 128 0x15E536: clap_builder::parser::parser::Parser::resolve_pending (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n1: 128 0x15A410: clap_builder::parser::parser::Parser::get_matches_with (in /home/markel/estudio/rust/rhd/target/release/rhd)
+         n1: 128 0x12180B: clap_builder::builder::command::Command::_do_parse (in /home/markel/estudio/rust/rhd/target/release/rhd)
+          n1: 128 0x117034: clap_builder::builder::command::Command::get_matches_from (in /home/markel/estudio/rust/rhd/target/release/rhd)
+           n1: 128 0x11C2E1: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+            n1: 128 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+             n1: 128 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+              n1: 128 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+               n0: 128 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n2: 128 0x129CD0: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 64 0x14610C: clap_builder::util::flat_map::FlatMap<K,V>::extend_unchecked (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 64 0x13CF52: clap_builder::parser::validator::Validator::validate (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 64 0x15A4B3: clap_builder::parser::parser::Parser::get_matches_with (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 64 0x12180B: clap_builder::builder::command::Command::_do_parse (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 64 0x117034: clap_builder::builder::command::Command::get_matches_from (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n1: 64 0x11C2E1: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+         n1: 64 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+          n1: 64 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+           n1: 64 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+            n0: 64 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 64 0x1465CF: clap_builder::util::flat_map::Entry<K,V>::or_insert (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 64 0x133A5D: clap_builder::parser::arg_matcher::ArgMatcher::start_custom_arg (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 64 0x160798: clap_builder::parser::parser::Parser::start_custom_arg (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 64 0x15EF00: clap_builder::parser::parser::Parser::react (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 64 0x15E536: clap_builder::parser::parser::Parser::resolve_pending (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n1: 64 0x15A410: clap_builder::parser::parser::Parser::get_matches_with (in /home/markel/estudio/rust/rhd/target/release/rhd)
+         n1: 64 0x12180B: clap_builder::builder::command::Command::_do_parse (in /home/markel/estudio/rust/rhd/target/release/rhd)
+          n1: 64 0x117034: clap_builder::builder::command::Command::get_matches_from (in /home/markel/estudio/rust/rhd/target/release/rhd)
+           n1: 64 0x11C2E1: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+            n1: 64 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+             n1: 64 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+              n1: 64 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+               n0: 64 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 64 0x129F41: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n0: 64 in 2 places, all below massif's threshold (1.00%)
+  n0: 36 in 2 places, all below massif's threshold (1.00%)
+ n2: 448 0x116907: _ZN5alloc7raw_vec11finish_grow17hd464dfebd0911626E.llvm.12582366075765127313 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 384 0x116A9E: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 384 0x11C7D8: <rhd::Args as clap_builder::derive::CommandFactory>::command (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 384 0x11C2BA: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 384 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 384 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 384 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n0: 384 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 64 0x1169C0: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 64 0x11C6DE: <rhd::Args as clap_builder::derive::CommandFactory>::command (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 64 0x11C2BA: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 64 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 64 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 64 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n0: 64 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+ n1: 256 0x129B81: _ZN5alloc7raw_vec11finish_grow17h66bc1c0697720e51E.llvm.16429142488755138199 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 256 0x129E70: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 256 0x145B7B: clap_builder::mkeymap::MKeyMap::_build (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 256 0x125846: clap_builder::builder::command::Command::_build_self (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 256 0x121797: clap_builder::builder::command::Command::_do_parse (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 256 0x117034: clap_builder::builder::command::Command::get_matches_from (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 256 0x11C2E1: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n1: 256 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+         n1: 256 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+          n1: 256 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+           n0: 256 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+ n0: 229 in 17 places, all below massif's threshold (1.00%)
+ n1: 200 0x127EAD: clap_builder::builder::command::Command::required_graph (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 200 0x15A44D: clap_builder::parser::parser::Parser::get_matches_with (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 200 0x12180B: clap_builder::builder::command::Command::_do_parse (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 200 0x117034: clap_builder::builder::command::Command::get_matches_from (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 200 0x11C2E1: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 200 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 200 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n1: 200 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+         n0: 200 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+ n1: 96 0x119ABC: <alloc::vec::Vec<T> as alloc::vec::spec_from_iter::SpecFromIter<T,I>>::from_iter (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 96 0x116D1C: clap_builder::builder::command::Command::get_matches_from (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 96 0x11C2E1: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 96 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 96 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 96 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n0: 96 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+ n1: 59 0x19561F: std::sys::os_str::bytes::Slice::to_owned (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n0: 59 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=2
+#-----------
+time=1344974866
+mem_heap_B=1214
+mem_heap_extra_B=74
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=2358449034
+mem_heap_B=1182
+mem_heap_extra_B=130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=3123142475
+mem_heap_B=1214
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=4461402795
+mem_heap_B=1182
+mem_heap_extra_B=130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=5265815628
+mem_heap_B=1206
+mem_heap_extra_B=98
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=6473045567
+mem_heap_B=1214
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=7960205593
+mem_heap_B=1214
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=9009954032
+mem_heap_B=1182
+mem_heap_extra_B=130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=10497096616
+mem_heap_B=1182
+mem_heap_extra_B=106
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=11459368562
+mem_heap_B=1222
+mem_heap_extra_B=130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=12716123652
+mem_heap_B=1214
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=13535482467
+mem_heap_B=1206
+mem_heap_extra_B=98
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=14491401124
+mem_heap_B=1222
+mem_heap_extra_B=130
+mem_stacks_B=0
+heap_tree=detailed
+n8: 1222 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x115131: std::sys_common::once::futex::Once::call (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 1024 0x114889: std::sync::once_lock::OnceLock<T>::initialize (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 1024 0x18EBA4: std::io::stdio::_print (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 1024 0x11F4C2: rhd::dump (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 1024 0x11C44D: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 1024 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 1024 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n1: 1024 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+         n0: 1024 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+ n2: 48 0x11F6DF: _ZN5alloc7raw_vec11finish_grow17h37de2044557f36a8E.llvm.15187120273395660756 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 32 0x113341: _ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$7reserve21do_reserve_and_handle17hda9a70d59fdd4bbeE.llvm.15187120273395660756 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 32 0x11F2E4: rhd::dump (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 32 0x11C44D: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 32 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 32 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 32 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n0: 32 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 16 0x11F7B1: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 16 0x11EFDE: rhd::dump (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 16 0x11C44D: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 16 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 16 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 16 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n0: 16 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+ n1: 48 0x18AB03: std::thread::Thread::new (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 48 0x18A62C: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n0: 48 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+ n1: 32 0x48CCCB2: __cxa_thread_atexit_impl (cxa_thread_atexit_impl.c:107)
+  n1: 32 0x191E10: std::sys_common::thread_info::set (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 32 0x18A63A: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n0: 32 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+ n2: 25 0x19561F: std::sys::os_str::bytes::Slice::to_owned (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 25 0x148224: _ZN73_$LT$P$u20$as$u20$clap_builder..builder..value_parser..AnyValueParser$GT$10parse_ref_17hb23cf4b066d52fe4E.llvm.5637575978377539526 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 25 0x15E1C4: clap_builder::parser::parser::Parser::push_arg_values (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 25 0x15EF22: clap_builder::parser::parser::Parser::react (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 25 0x15E536: clap_builder::parser::parser::Parser::resolve_pending (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 25 0x15A410: clap_builder::parser::parser::Parser::get_matches_with (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 25 0x12180B: clap_builder::builder::command::Command::_do_parse (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n1: 25 0x117034: clap_builder::builder::command::Command::get_matches_from (in /home/markel/estudio/rust/rhd/target/release/rhd)
+         n1: 25 0x11C2E1: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+          n1: 25 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+           n1: 25 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+            n1: 25 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+             n0: 25 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 16 0x11EDEB: rhd::dump (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 16 0x11C44D: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 16 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 16 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 16 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n0: 16 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+ n2: 16 0x1AE453: alloc::raw_vec::finish_grow (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 16 0x115E71: alloc::raw_vec::RawVec<T,A>::reserve::do_reserve_and_handle (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 16 0x1AF135: <alloc::string::String as core::fmt::Write>::write_str (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n0: 16 in 3 places, all below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 13 in 23 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=15
+#-----------
+time=15583881071
+mem_heap_B=1214
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=16403240136
+mem_heap_B=1222
+mem_heap_extra_B=130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=17905399555
+mem_heap_B=1206
+mem_heap_extra_B=98
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=18969703762
+mem_heap_B=1214
+mem_heap_extra_B=74
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=20439367443
+mem_heap_B=1206
+mem_heap_extra_B=98
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=21419143108
+mem_heap_B=1174
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=22153974834
+mem_heap_B=1198
+mem_heap_extra_B=106
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=23623638856
+mem_heap_B=1214
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=24603414872
+mem_heap_B=1214
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=26073078543
+mem_heap_B=1214
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=27297798131
+mem_heap_B=1246
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=28032629909
+mem_heap_B=1214
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=29502293808
+mem_heap_B=1254
+mem_heap_extra_B=130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=30971957326
+mem_heap_B=1246
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=32200996908
+mem_heap_B=1206
+mem_heap_extra_B=98
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=33430036212
+mem_heap_B=1174
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=34249395796
+mem_heap_B=1206
+mem_heap_extra_B=122
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=35068755339
+mem_heap_B=1174
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=36297794983
+mem_heap_B=1222
+mem_heap_extra_B=130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=37526834271
+mem_heap_B=1174
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=38346194010
+mem_heap_B=1246
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=39575233285
+mem_heap_B=1182
+mem_heap_extra_B=106
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=40394592731
+mem_heap_B=1214
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=41213952508
+mem_heap_B=1214
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=42033312204
+mem_heap_B=1198
+mem_heap_extra_B=106
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=42852672126
+mem_heap_B=1158
+mem_heap_extra_B=82
+mem_stacks_B=0
+heap_tree=detailed
+n6: 1158 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x115131: std::sys_common::once::futex::Once::call (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 1024 0x114889: std::sync::once_lock::OnceLock<T>::initialize (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 1024 0x18EBA4: std::io::stdio::_print (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 1024 0x11F4C2: rhd::dump (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 1024 0x11C44D: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 1024 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 1024 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n1: 1024 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+         n0: 1024 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+ n1: 48 0x18AB03: std::thread::Thread::new (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 48 0x18A62C: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n0: 48 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+ n1: 32 0x48CCCB2: __cxa_thread_atexit_impl (cxa_thread_atexit_impl.c:107)
+  n1: 32 0x191E10: std::sys_common::thread_info::set (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 32 0x18A63A: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n0: 32 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+ n2: 25 0x19561F: std::sys::os_str::bytes::Slice::to_owned (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 25 0x148224: _ZN73_$LT$P$u20$as$u20$clap_builder..builder..value_parser..AnyValueParser$GT$10parse_ref_17hb23cf4b066d52fe4E.llvm.5637575978377539526 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 25 0x15E1C4: clap_builder::parser::parser::Parser::push_arg_values (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 25 0x15EF22: clap_builder::parser::parser::Parser::react (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 25 0x15E536: clap_builder::parser::parser::Parser::resolve_pending (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 25 0x15A410: clap_builder::parser::parser::Parser::get_matches_with (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 25 0x12180B: clap_builder::builder::command::Command::_do_parse (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n1: 25 0x117034: clap_builder::builder::command::Command::get_matches_from (in /home/markel/estudio/rust/rhd/target/release/rhd)
+         n1: 25 0x11C2E1: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+          n1: 25 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+           n1: 25 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+            n1: 25 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+             n0: 25 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 16 0x11EDEB: rhd::dump (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 16 0x11C44D: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 16 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 16 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 16 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n0: 16 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+ n0: 13 in 25 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=41
+#-----------
+time=43672031667
+mem_heap_B=1214
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=44491391554
+mem_heap_B=1214
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=45310751169
+mem_heap_B=1158
+mem_heap_extra_B=82
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=46130112171
+mem_heap_B=1214
+mem_heap_extra_B=74
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=47359152365
+mem_heap_B=1214
+mem_heap_extra_B=74
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=48588192099
+mem_heap_B=1254
+mem_heap_extra_B=130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=49407551937
+mem_heap_B=1214
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=50636591440
+mem_heap_B=1246
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=51455950944
+mem_heap_B=1206
+mem_heap_extra_B=98
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=52190782714
+mem_heap_B=1238
+mem_heap_extra_B=98
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=52925614595
+mem_heap_B=1222
+mem_heap_extra_B=130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=53660446425
+mem_heap_B=1158
+mem_heap_extra_B=82
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=54395278343
+mem_heap_B=1222
+mem_heap_extra_B=130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=55130110228
+mem_heap_B=1246
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=55864942255
+mem_heap_B=1158
+mem_heap_extra_B=82
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=56599774029
+mem_heap_B=1206
+mem_heap_extra_B=98
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=57334605916
+mem_heap_B=1222
+mem_heap_extra_B=130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=58069437719
+mem_heap_B=1246
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=detailed
+n7: 1246 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x115131: std::sys_common::once::futex::Once::call (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 1024 0x114889: std::sync::once_lock::OnceLock<T>::initialize (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 1024 0x18EBA4: std::io::stdio::_print (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 1024 0x11F4C2: rhd::dump (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 1024 0x11C44D: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 1024 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 1024 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n1: 1024 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+         n0: 1024 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+ n2: 80 0x11F6DF: _ZN5alloc7raw_vec11finish_grow17h37de2044557f36a8E.llvm.15187120273395660756 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 64 0x113341: _ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$7reserve21do_reserve_and_handle17hda9a70d59fdd4bbeE.llvm.15187120273395660756 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 64 0x11F2E4: rhd::dump (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 64 0x11C44D: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 64 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 64 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 64 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n0: 64 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 16 0x11F7B1: alloc::raw_vec::RawVec<T,A>::reserve_for_push (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 16 0x11EFDE: rhd::dump (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 16 0x11C44D: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 16 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 16 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 16 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n0: 16 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+ n1: 48 0x18AB03: std::thread::Thread::new (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 48 0x18A62C: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n0: 48 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+ n1: 32 0x48CCCB2: __cxa_thread_atexit_impl (cxa_thread_atexit_impl.c:107)
+  n1: 32 0x191E10: std::sys_common::thread_info::set (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 32 0x18A63A: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n0: 32 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+ n2: 25 0x19561F: std::sys::os_str::bytes::Slice::to_owned (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 25 0x148224: _ZN73_$LT$P$u20$as$u20$clap_builder..builder..value_parser..AnyValueParser$GT$10parse_ref_17hb23cf4b066d52fe4E.llvm.5637575978377539526 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 25 0x15E1C4: clap_builder::parser::parser::Parser::push_arg_values (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 25 0x15EF22: clap_builder::parser::parser::Parser::react (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 25 0x15E536: clap_builder::parser::parser::Parser::resolve_pending (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 25 0x15A410: clap_builder::parser::parser::Parser::get_matches_with (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 25 0x12180B: clap_builder::builder::command::Command::_do_parse (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n1: 25 0x117034: clap_builder::builder::command::Command::get_matches_from (in /home/markel/estudio/rust/rhd/target/release/rhd)
+         n1: 25 0x11C2E1: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+          n1: 25 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+           n1: 25 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+            n1: 25 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+             n0: 25 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 21 in 24 places, all below massif's threshold (1.00%)
+ n1: 16 0x11EDEB: rhd::dump (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 16 0x11C44D: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 16 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 16 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 16 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n0: 16 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+#-----------
+snapshot=59
+#-----------
+time=58804269547
+mem_heap_B=1206
+mem_heap_extra_B=98
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=59539101325
+mem_heap_B=1214
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=60273933270
+mem_heap_B=1206
+mem_heap_extra_B=98
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=61008765019
+mem_heap_B=1206
+mem_heap_extra_B=98
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=61743596986
+mem_heap_B=1182
+mem_heap_extra_B=106
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=62478429094
+mem_heap_B=1222
+mem_heap_extra_B=130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=63213260856
+mem_heap_B=1214
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=63948092768
+mem_heap_B=1246
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=64682924828
+mem_heap_B=1254
+mem_heap_extra_B=130
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=65417756581
+mem_heap_B=1182
+mem_heap_extra_B=130
+mem_stacks_B=0
+heap_tree=detailed
+n7: 1182 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x115131: std::sys_common::once::futex::Once::call (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 1024 0x114889: std::sync::once_lock::OnceLock<T>::initialize (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 1024 0x18EBA4: std::io::stdio::_print (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 1024 0x11F4C2: rhd::dump (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 1024 0x11C44D: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 1024 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 1024 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n1: 1024 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+         n0: 1024 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+ n1: 48 0x18AB03: std::thread::Thread::new (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 48 0x18A62C: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n0: 48 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+ n1: 32 0x48CCCB2: __cxa_thread_atexit_impl (cxa_thread_atexit_impl.c:107)
+  n1: 32 0x191E10: std::sys_common::thread_info::set (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 32 0x18A63A: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n0: 32 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+ n2: 25 0x19561F: std::sys::os_str::bytes::Slice::to_owned (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 25 0x148224: _ZN73_$LT$P$u20$as$u20$clap_builder..builder..value_parser..AnyValueParser$GT$10parse_ref_17hb23cf4b066d52fe4E.llvm.5637575978377539526 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 25 0x15E1C4: clap_builder::parser::parser::Parser::push_arg_values (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 25 0x15EF22: clap_builder::parser::parser::Parser::react (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 25 0x15E536: clap_builder::parser::parser::Parser::resolve_pending (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n1: 25 0x15A410: clap_builder::parser::parser::Parser::get_matches_with (in /home/markel/estudio/rust/rhd/target/release/rhd)
+       n1: 25 0x12180B: clap_builder::builder::command::Command::_do_parse (in /home/markel/estudio/rust/rhd/target/release/rhd)
+        n1: 25 0x117034: clap_builder::builder::command::Command::get_matches_from (in /home/markel/estudio/rust/rhd/target/release/rhd)
+         n1: 25 0x11C2E1: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+          n1: 25 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+           n1: 25 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+            n1: 25 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+             n0: 25 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n2: 24 0x11F703: _ZN5alloc7raw_vec11finish_grow17h37de2044557f36a8E.llvm.15187120273395660756 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 16 0x113341: _ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$7reserve21do_reserve_and_handle17hda9a70d59fdd4bbeE.llvm.15187120273395660756 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n0: 16 in 2 places, all below massif's threshold (1.00%)
+  n0: 8 in 1 place, below massif's threshold (1.00%)
+ n1: 16 0x11EDEB: rhd::dump (in /home/markel/estudio/rust/rhd/target/release/rhd)
+  n1: 16 0x11C44D: rhd::main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+   n1: 16 0x117392: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/estudio/rust/rhd/target/release/rhd)
+    n1: 16 0x11DB58: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17h9558ad106134d415E.llvm.355378486010943136 (in /home/markel/estudio/rust/rhd/target/release/rhd)
+     n1: 16 0x18A640: std::rt::lang_start_internal (in /home/markel/estudio/rust/rhd/target/release/rhd)
+      n0: 16 0x11D054: main (in /home/markel/estudio/rust/rhd/target/release/rhd)
+ n0: 13 in 24 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=69
+#-----------
+time=66152588377
+mem_heap_B=1198
+mem_heap_extra_B=106
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=66887420134
+mem_heap_B=1214
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=67622251896
+mem_heap_B=1214
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=68357083684
+mem_heap_B=1198
+mem_heap_extra_B=138
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=69091915462
+mem_heap_B=1206
+mem_heap_extra_B=98
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=69826747251
+mem_heap_B=1214
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
