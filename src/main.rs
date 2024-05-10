@@ -15,5 +15,7 @@ fn main() {
         .context(format!("Reading file {}",args.file_path))
         .expect("Provided file not found");
 
-    rhd::dump(f);
+    for line in rhd::dump(f) {
+        println!("{}",line);
+    }
 }

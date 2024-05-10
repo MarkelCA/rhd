@@ -2,9 +2,11 @@ use std::io::{BufReader,Read};
 
 const CHUNK_SIZE: usize = 16;
 
-pub fn dump(f: std::fs::File) {
+pub fn dump(f: std::fs::File) -> impl Iterator<Item = String>  {
     let mut b = BufReader::with_capacity(CHUNK_SIZE, &f);
     let mut line = 0;
+    let mut output = Vec::new();
+
     loop {
         let buffer = &mut [0;CHUNK_SIZE];
         let bytes_read = b.read(buffer).expect("Failed reading the byte buffer");
@@ -37,10 +39,12 @@ pub fn dump(f: std::fs::File) {
             hex_line.push_str(format!("{}",byte_pair_str).as_str());
         }
 
-        println!("{:0>8x}: {:<40} | {}", line*CHUNK_SIZE, hex_line,ascii_line);
+        output.push(format!("{:0>8x}: {:<40} | {}", line*CHUNK_SIZE, hex_line,ascii_line));
 
         line+=1;
     }
+
+    output.into_iter()
 }
 
 fn get_printable(byte: u8) -> char {
