@@ -1,4 +1,5 @@
 use std::io::{BufReader,Read};
+use std::fmt::Write;
 
 const BATCH_CHUNK_SIZE: usize = 4096;
 const LINE_CHUNK_SIZE: usize = 16;
@@ -8,6 +9,7 @@ pub fn dump(f: std::fs::File) {
     let filesize = f.metadata().unwrap().len();
     let mut line = 0;
     loop {
+        let mut bytes_printed = 0;
         let buffer_chunk = &mut [0;BATCH_CHUNK_SIZE];
         let bytes_chunk = b.read(buffer_chunk).expect("Failed reading the byte buffer");
 
@@ -15,12 +17,12 @@ pub fn dump(f: std::fs::File) {
             break;
         }
 
-
-        let mut bytes_printed = 0;
-        let mut lines = String::new();
+        let mut chunk_lines = String::new();
 
         for mut c in buffer_chunk.chunks(LINE_CHUNK_SIZE) {
-            let bytes_pending = (filesize - bytes_printed) as usize;
+            let bytes_pending = 
+                if filesize > bytes_printed {(filesize - bytes_printed) as usize } 
+                else {0};
 
             if bytes_pending < LINE_CHUNK_SIZE {
                 c = &c[..bytes_pending];
@@ -33,7 +35,6 @@ pub fn dump(f: std::fs::File) {
             let mut hex_line   = String::new();
             let mut ascii_line = String::new();
 
-            // let line_bytes = buffer_line[..bytes_line].to_vec();
             let line_bytes = c.to_vec();
 
             for chunk in line_bytes.chunks(2) {
@@ -42,27 +43,22 @@ pub fn dump(f: std::fs::File) {
 
                 let mut byte_pair_str = String::with_capacity(2);
 
-                byte_pair_str.push_str(&format!("{:0>2x}",first_byte));
+                write!(byte_pair_str,"{:0>2x}",first_byte).unwrap();
                 ascii_line.push(get_printable(*first_byte));
 
                 // If the file is odd the second byte will be None at the last iteration
                 if let Some(byte) = second_byte {
-                    byte_pair_str.push_str(&format!("{:0>2x} ",byte));
+                    write!(byte_pair_str,"{:0>2x} ",byte).unwrap();
                     ascii_line.push(get_printable(*byte));
 
                 }
                 hex_line.push_str(format!("{}",byte_pair_str).as_str());
             }
-
-            let line_str = format!("{:0>8x}: {:<40}  {}\n", line*LINE_CHUNK_SIZE, hex_line,ascii_line);
-
-            // println!("{}", line_str);
-            lines.push_str(&line_str);
+            write!(chunk_lines,"{:0>8x}: {:<40}  {}\n", line*LINE_CHUNK_SIZE, hex_line,ascii_line).unwrap();
             line += 1;
             bytes_printed += LINE_CHUNK_SIZE as u64;
         }
-        println!("{}",lines);
-
+        println!("{}",chunk_lines);
     }
 
 }
