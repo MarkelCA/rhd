@@ -1,4 +1,5 @@
 use anyhow::Context;
+use std::io::BufReader;
 use clap::Parser;
 use std::fs::File;
 
@@ -11,9 +12,13 @@ struct Args {
 fn main() {
     let args = Args::parse();
 
+
     let f = File::open(&args.file_path)
         .context(format!("Reading file {}",args.file_path))
         .expect("Provided file not found");
 
-    rhd::dump(f);
+    let filesize = f.metadata().unwrap().len();
+    let b = BufReader::with_capacity(rhd::BATCH_CHUNK_SIZE, f);
+
+    rhd::dump(b,filesize);
 }

@@ -1,12 +1,11 @@
 use std::io::{BufReader,Read};
+use std::fs::File;
 use std::fmt::Write;
 
-const BATCH_CHUNK_SIZE: usize = 4096;
+pub const BATCH_CHUNK_SIZE: usize = 4096;
 const LINE_CHUNK_SIZE: usize = 16;
 
-pub fn dump(f: std::fs::File) {
-    let mut b = BufReader::with_capacity(BATCH_CHUNK_SIZE, &f);
-    let filesize = f.metadata().unwrap().len();
+pub fn dump(mut b: BufReader<File>, filesize: u64) {
     let mut line = 0;
     loop {
         let mut bytes_printed = 0;
@@ -60,7 +59,6 @@ pub fn dump(f: std::fs::File) {
         }
         println!("{}",chunk_lines);
     }
-
 }
 
 fn get_printable(byte: u8) -> char {
