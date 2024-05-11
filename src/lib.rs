@@ -1,12 +1,15 @@
-use std::io::{BufReader,Read};
+use std::io::{self,BufReader,Read,Write};
 use std::fs::File;
-use std::fmt::Write;
+use std::fmt::Write as FmtWrite;
+
 
 pub const BATCH_CHUNK_SIZE: usize = 4096;
 const LINE_CHUNK_SIZE: usize = 16;
 
 pub fn dump(mut b: BufReader<File>, filesize: u64) {
     let mut line = 0;
+    let mut lock = io::stdout().lock();
+
     loop {
         let mut bytes_printed = 0;
         let buffer_chunk = &mut [0;BATCH_CHUNK_SIZE];
@@ -51,13 +54,13 @@ pub fn dump(mut b: BufReader<File>, filesize: u64) {
                     ascii_line.push(get_printable(*byte));
 
                 }
-                hex_line.push_str(format!("{}",byte_pair_str).as_str());
+                hex_line.push_str(&byte_pair_str);
             }
             write!(chunk_lines,"{:0>8x}: {:<40}  {}\n", line*LINE_CHUNK_SIZE, hex_line,ascii_line).unwrap();
             line += 1;
             bytes_printed += LINE_CHUNK_SIZE as u64;
         }
-        println!("{}",chunk_lines);
+        writeln!(lock,"{}",chunk_lines).unwrap();
     }
 }
 
