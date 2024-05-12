@@ -47,5 +47,6 @@ $ cargo run -q assets/binary
 ```
 
 ## Todos
-- [ ] Allow piped in input instead of filename
+- [X] Allow piped in input instead of filename
 - [ ] Optimize the memory usage
+- [ ] Unit tests

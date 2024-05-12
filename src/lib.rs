@@ -1,12 +1,11 @@
-use std::io::{self,BufReader,Read,Write};
-use std::fs::File;
+use std::io::{self,Read,Write};
 use std::fmt::Write as FmtWrite;
-
 
 pub const BATCH_CHUNK_SIZE: usize = 4096;
 const LINE_CHUNK_SIZE: usize = 16;
 
-pub fn dump(mut b: BufReader<File>) {
+
+pub fn dump<T: Read>(mut b: T) {
     let mut line = 0;
     let mut lock = io::stdout().lock();
 
@@ -64,6 +63,7 @@ pub fn dump(mut b: BufReader<File>) {
         writeln!(lock,"{}",chunk_lines).unwrap();
     }
 }
+
 
 fn get_printable(byte: u8) -> char {
     match byte {
