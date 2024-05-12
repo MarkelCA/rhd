@@ -27,11 +27,11 @@ Vendor ID:               GenuineIntel
 ```
 ## Time
 ```bash
-rhd ~/awscliv2.zip  2,69s user 1,97s system 96% cpu 4,849 total
+rhd ~/awscliv2.zip  2,65s user 1,80s system 96% cpu 4,608 total
 ```
 Comparison with `xxd`:
 ```bash
-xxd ~/awscliv2.zip  1,59s user 3,60s system 93% cpu 5,531 total
+xxd ~/awscliv2.zip  1,42s user 3,36s system 92% cpu 5,167 total
 ```
 ## Memory
 These benchmarks have been performed using [Valgrind](https://valgrind.org/) and their purpose is to measure the memory usage of the hex dumper.
