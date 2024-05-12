@@ -1,13 +1,22 @@
 # rhd
-Hex dumper written in Rust, inspired by `xxd`. 
+Rust Hex Dump. Trying to outperform [xxd](https://linux.die.net/man/1/xxd). 
 
 Disclaimer: This is not a complete reimplementation, but a naive test project meant to learn the language.
+## Instalation
+```
+$ git clone https://github.com/MarkelCA/rhd.git
+$ cd rhd
+$ cargo install --path .
+```
 ## Usage
 ```
-Usage: rhd <FILE_PATH>
+$ rhd --help
+Rust Hex Dump. A simple hex dump utility written in Rust.
+
+Usage: rhd [FILE_PATH]
 
 Arguments:
-  <FILE_PATH>
+  [FILE_PATH]  Input file to read from. If not provided reads from stdin
 
 Options:
   -h, --help     Print help
@@ -16,7 +25,7 @@ Options:
 ## Examples
 Text file
 ```
-$ cargo run -q assets/text.txt
+$ rhd assets/text.txt
 00000000: 5468 6520 7175 6963 6b20 6272 6f77 6e20  | The quick brown
 00000010: 666f 7820 6a75 6d70 7320 6f76 6572 020a  | fox jumps over .
 00000020: 7468 6520 6c61 7a79 2064 6f67 0a         | the lazy dog .
@@ -24,7 +33,7 @@ $ cargo run -q assets/text.txt
 
 Binary file
 ```
-$ cargo run -q assets/binary
+$ rhd assets/binary
 00000000: 504b 0034 0140 0000 0000 e78c 5058 0000  | PK..........PX..
 00000010: 0000 0000 0000 0000 0000 0040 0000 6177  | ..............aw
 00000020: 732f 504b 0034 0140 0000 0000 e78c 5058  | s/PK..........PX
@@ -44,6 +53,11 @@ $ cargo run -q assets/binary
 00000100: 8293 121f 7fe8 9b13 f84a 33c1 012e c3c1  | ........J3.....
 00000110: 291c 0491 535f 99c7 03f8 9e14 6825 261b  | ).I.S_......h%&.
 00000120: e049 0e85 a068 0829 40cf 14e8            | .I...h..@...
+```
+It also allows piped in input:
+```
+$ echo -n -e '\x48\x65\x6c\x6c\x6f\x2c\x20\x57\x6f\x72\x6c\x64\x21' | rhd
+00000000: 4865 6c6c 6f2c 2057 6f72 6c64 21          Hello, World!
 ```
 
 ## Todos

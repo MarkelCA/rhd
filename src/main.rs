@@ -6,6 +6,7 @@ use std::fs::File;
 #[derive(Parser, Debug)]
 #[command(version, about, long_about = None)]
 struct Args {
+    /// Input file to read from. If not provided reads from stdin.
     file_path: Option<String>,
 }
 

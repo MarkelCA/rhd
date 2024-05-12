@@ -1,6 +1,6 @@
 [package]
 name = "rhd"
-description = "Rust Hex Dump"
+description = "Rust Hex Dump. A simple hex dump utility written in Rust."
 version = "0.1.0"
 edition = "2021"
 
