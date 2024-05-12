@@ -61,6 +61,5 @@ $ echo -n -e '\x48\x65\x6c\x6c\x6f\x2c\x20\x57\x6f\x72\x6c\x64\x21' | rhd
 ```
 
 ## Todos
-- [X] Allow piped in input instead of filename
 - [ ] Optimize the memory usage
 - [ ] Unit tests

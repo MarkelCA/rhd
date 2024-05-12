@@ -1,0 +1,85 @@
+desc: (none)
+cmd: xxd /home/markel/awscliv2.zip
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=178003
+mem_heap_B=472
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=178670
+mem_heap_B=4568
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=183773
+mem_heap_B=5592
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=19494261737
+mem_heap_B=5592
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=peak
+n2: 5592 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5120 0x48E5BA3: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 5120 0x48F4CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x48F3CDB: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:485)
+    n1: 4096 0x48F4D95: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x109A19: ??? (in /usr/bin/xxd)
+      n0: 4096 0x4890D8F: (below main) (libc_start_call_main.h:58)
+   n1: 1024 0x48F3F5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48F26D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48F26D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E6A9C: fputs (iofputs.c:38)
+       n1: 1024 0x10AB9E: ??? (in /usr/bin/xxd)
+        n1: 1024 0x109A02: ??? (in /usr/bin/xxd)
+         n0: 1024 0x4890D8F: (below main) (libc_start_call_main.h:58)
+ n1: 472 0x48E664D: __fopen_internal (iofopen.c:65)
+  n1: 472 0x48E664D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x1096D9: ??? (in /usr/bin/xxd)
+    n0: 472 0x4890D8F: (below main) (libc_start_call_main.h:58)
+#-----------
+snapshot=5
+#-----------
+time=19494261737
+mem_heap_B=4568
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=19494262085
+mem_heap_B=472
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=19494262215
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

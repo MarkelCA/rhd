@@ -1,0 +1,751 @@
+desc: (none)
+cmd: rhd /home/markel/awscliv2.zip
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2047372
+mem_heap_B=30905
+mem_heap_extra_B=103
+mem_stacks_B=0
+heap_tree=peak
+n4: 30905 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 25680 0x117A81: _ZN5alloc7raw_vec11finish_grow17h308f662c1e01f5efE.llvm.4612843667029046544 (in /home/markel/.cargo/bin/rhd)
+  n1: 25600 0x1140D1: alloc::raw_vec::RawVec<T,A>::reserve::do_reserve_and_handle (in /home/markel/.cargo/bin/rhd)
+   n2: 25600 0x11FE55: <alloc::string::String as core::fmt::Write>::write_str (in /home/markel/.cargo/bin/rhd)
+    n1: 25600 0x1B3F4F: core::fmt::write (in /home/markel/.cargo/bin/rhd)
+     n1: 25600 0x11F6F6: rhd::dump (in /home/markel/.cargo/bin/rhd)
+      n1: 25600 0x11C84F: rhd::main (in /home/markel/.cargo/bin/rhd)
+       n1: 25600 0x1182C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/.cargo/bin/rhd)
+        n1: 25600 0x120438: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hd57e864ac3dc4127E.llvm.5645047508652013464 (in /home/markel/.cargo/bin/rhd)
+         n1: 25600 0x18C4F0: std::rt::lang_start_internal (in /home/markel/.cargo/bin/rhd)
+          n0: 25600 0x11D404: main (in /home/markel/.cargo/bin/rhd)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+  n0: 80 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x11C7C6: rhd::main (in /home/markel/.cargo/bin/rhd)
+  n1: 4096 0x1182C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/.cargo/bin/rhd)
+   n1: 4096 0x120438: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hd57e864ac3dc4127E.llvm.5645047508652013464 (in /home/markel/.cargo/bin/rhd)
+    n1: 4096 0x18C4F0: std::rt::lang_start_internal (in /home/markel/.cargo/bin/rhd)
+     n0: 4096 0x11D404: main (in /home/markel/.cargo/bin/rhd)
+ n1: 1024 0x1160B1: std::sys_common::once::futex::Once::call (in /home/markel/.cargo/bin/rhd)
+  n1: 1024 0x115809: std::sync::once_lock::OnceLock<T>::initialize (in /home/markel/.cargo/bin/rhd)
+   n1: 1024 0x190D78: std::io::stdio::stdout (in /home/markel/.cargo/bin/rhd)
+    n1: 1024 0x11EE18: rhd::dump (in /home/markel/.cargo/bin/rhd)
+     n1: 1024 0x11C84F: rhd::main (in /home/markel/.cargo/bin/rhd)
+      n1: 1024 0x1182C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/.cargo/bin/rhd)
+       n1: 1024 0x120438: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hd57e864ac3dc4127E.llvm.5645047508652013464 (in /home/markel/.cargo/bin/rhd)
+        n1: 1024 0x18C4F0: std::rt::lang_start_internal (in /home/markel/.cargo/bin/rhd)
+         n0: 1024 0x11D404: main (in /home/markel/.cargo/bin/rhd)
+ n0: 105 in 28 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=2
+#-----------
+time=391535557
+mem_heap_B=8449
+mem_heap_extra_B=111
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=958996068
+mem_heap_B=11673
+mem_heap_extra_B=103
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=1548316321
+mem_heap_B=11707
+mem_heap_extra_B=125
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=1942483286
+mem_heap_B=8473
+mem_heap_extra_B=103
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=2556427955
+mem_heap_B=30857
+mem_heap_extra_B=127
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=2939984651
+mem_heap_B=6873
+mem_heap_extra_B=103
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=3589082960
+mem_heap_B=18089
+mem_heap_extra_B=95
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=4383652875
+mem_heap_B=30875
+mem_heap_extra_B=125
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=4929918910
+mem_heap_B=30875
+mem_heap_extra_B=125
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=5376863785
+mem_heap_B=30857
+mem_heap_extra_B=127
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=5774148030
+mem_heap_B=11649
+mem_heap_extra_B=135
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=6317923816
+mem_heap_B=6913
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=detailed
+n4: 6913 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x11C7C6: rhd::main (in /home/markel/.cargo/bin/rhd)
+  n1: 4096 0x1182C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/.cargo/bin/rhd)
+   n1: 4096 0x120438: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hd57e864ac3dc4127E.llvm.5645047508652013464 (in /home/markel/.cargo/bin/rhd)
+    n1: 4096 0x18C4F0: std::rt::lang_start_internal (in /home/markel/.cargo/bin/rhd)
+     n0: 4096 0x11D404: main (in /home/markel/.cargo/bin/rhd)
+ n2: 1688 0x117A81: _ZN5alloc7raw_vec11finish_grow17h308f662c1e01f5efE.llvm.4612843667029046544 (in /home/markel/.cargo/bin/rhd)
+  n1: 1608 0x1140D1: alloc::raw_vec::RawVec<T,A>::reserve::do_reserve_and_handle (in /home/markel/.cargo/bin/rhd)
+   n2: 1608 0x11FE55: <alloc::string::String as core::fmt::Write>::write_str (in /home/markel/.cargo/bin/rhd)
+    n1: 1600 0x1B3F4F: core::fmt::write (in /home/markel/.cargo/bin/rhd)
+     n1: 1600 0x11F6F6: rhd::dump (in /home/markel/.cargo/bin/rhd)
+      n1: 1600 0x11C84F: rhd::main (in /home/markel/.cargo/bin/rhd)
+       n1: 1600 0x1182C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/.cargo/bin/rhd)
+        n1: 1600 0x120438: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hd57e864ac3dc4127E.llvm.5645047508652013464 (in /home/markel/.cargo/bin/rhd)
+         n1: 1600 0x18C4F0: std::rt::lang_start_internal (in /home/markel/.cargo/bin/rhd)
+          n0: 1600 0x11D404: main (in /home/markel/.cargo/bin/rhd)
+    n0: 8 in 2 places, all below massif's threshold (1.00%)
+  n0: 80 in 2 places, all below massif's threshold (1.00%)
+ n1: 1024 0x1160B1: std::sys_common::once::futex::Once::call (in /home/markel/.cargo/bin/rhd)
+  n1: 1024 0x115809: std::sync::once_lock::OnceLock<T>::initialize (in /home/markel/.cargo/bin/rhd)
+   n1: 1024 0x190D78: std::io::stdio::stdout (in /home/markel/.cargo/bin/rhd)
+    n1: 1024 0x11EE18: rhd::dump (in /home/markel/.cargo/bin/rhd)
+     n1: 1024 0x11C84F: rhd::main (in /home/markel/.cargo/bin/rhd)
+      n1: 1024 0x1182C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/.cargo/bin/rhd)
+       n1: 1024 0x120438: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hd57e864ac3dc4127E.llvm.5645047508652013464 (in /home/markel/.cargo/bin/rhd)
+        n1: 1024 0x18C4F0: std::rt::lang_start_internal (in /home/markel/.cargo/bin/rhd)
+         n0: 1024 0x11D404: main (in /home/markel/.cargo/bin/rhd)
+ n0: 105 in 28 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=14
+#-----------
+time=6891487083
+mem_heap_B=6889
+mem_heap_extra_B=95
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=7383111567
+mem_heap_B=30881
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=7956674185
+mem_heap_B=30907
+mem_heap_extra_B=125
+mem_stacks_B=0
+heap_tree=detailed
+n4: 30907 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 25680 0x117A81: _ZN5alloc7raw_vec11finish_grow17h308f662c1e01f5efE.llvm.4612843667029046544 (in /home/markel/.cargo/bin/rhd)
+  n1: 25600 0x1140D1: alloc::raw_vec::RawVec<T,A>::reserve::do_reserve_and_handle (in /home/markel/.cargo/bin/rhd)
+   n2: 25600 0x11FE55: <alloc::string::String as core::fmt::Write>::write_str (in /home/markel/.cargo/bin/rhd)
+    n1: 25600 0x1B3F4F: core::fmt::write (in /home/markel/.cargo/bin/rhd)
+     n1: 25600 0x11F6F6: rhd::dump (in /home/markel/.cargo/bin/rhd)
+      n1: 25600 0x11C84F: rhd::main (in /home/markel/.cargo/bin/rhd)
+       n1: 25600 0x1182C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/.cargo/bin/rhd)
+        n1: 25600 0x120438: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hd57e864ac3dc4127E.llvm.5645047508652013464 (in /home/markel/.cargo/bin/rhd)
+         n1: 25600 0x18C4F0: std::rt::lang_start_internal (in /home/markel/.cargo/bin/rhd)
+          n0: 25600 0x11D404: main (in /home/markel/.cargo/bin/rhd)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+  n0: 80 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x11C7C6: rhd::main (in /home/markel/.cargo/bin/rhd)
+  n1: 4096 0x1182C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/.cargo/bin/rhd)
+   n1: 4096 0x120438: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hd57e864ac3dc4127E.llvm.5645047508652013464 (in /home/markel/.cargo/bin/rhd)
+    n1: 4096 0x18C4F0: std::rt::lang_start_internal (in /home/markel/.cargo/bin/rhd)
+     n0: 4096 0x11D404: main (in /home/markel/.cargo/bin/rhd)
+ n1: 1024 0x1160B1: std::sys_common::once::futex::Once::call (in /home/markel/.cargo/bin/rhd)
+  n1: 1024 0x115809: std::sync::once_lock::OnceLock<T>::initialize (in /home/markel/.cargo/bin/rhd)
+   n1: 1024 0x190D78: std::io::stdio::stdout (in /home/markel/.cargo/bin/rhd)
+    n1: 1024 0x11EE18: rhd::dump (in /home/markel/.cargo/bin/rhd)
+     n1: 1024 0x11C84F: rhd::main (in /home/markel/.cargo/bin/rhd)
+      n1: 1024 0x1182C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/.cargo/bin/rhd)
+       n1: 1024 0x120438: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hd57e864ac3dc4127E.llvm.5645047508652013464 (in /home/markel/.cargo/bin/rhd)
+        n1: 1024 0x18C4F0: std::rt::lang_start_internal (in /home/markel/.cargo/bin/rhd)
+         n0: 1024 0x11D404: main (in /home/markel/.cargo/bin/rhd)
+ n0: 107 in 28 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=17
+#-----------
+time=8284424754
+mem_heap_B=18081
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=8776050203
+mem_heap_B=11689
+mem_heap_extra_B=95
+mem_stacks_B=0
+heap_tree=detailed
+n4: 11689 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 6480 0x117A81: _ZN5alloc7raw_vec11finish_grow17h308f662c1e01f5efE.llvm.4612843667029046544 (in /home/markel/.cargo/bin/rhd)
+  n1: 6400 0x1140D1: alloc::raw_vec::RawVec<T,A>::reserve::do_reserve_and_handle (in /home/markel/.cargo/bin/rhd)
+   n2: 6400 0x11FE55: <alloc::string::String as core::fmt::Write>::write_str (in /home/markel/.cargo/bin/rhd)
+    n1: 6400 0x1B3F4F: core::fmt::write (in /home/markel/.cargo/bin/rhd)
+     n1: 6400 0x11F6F6: rhd::dump (in /home/markel/.cargo/bin/rhd)
+      n1: 6400 0x11C84F: rhd::main (in /home/markel/.cargo/bin/rhd)
+       n1: 6400 0x1182C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/.cargo/bin/rhd)
+        n1: 6400 0x120438: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hd57e864ac3dc4127E.llvm.5645047508652013464 (in /home/markel/.cargo/bin/rhd)
+         n1: 6400 0x18C4F0: std::rt::lang_start_internal (in /home/markel/.cargo/bin/rhd)
+          n0: 6400 0x11D404: main (in /home/markel/.cargo/bin/rhd)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+  n0: 80 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x11C7C6: rhd::main (in /home/markel/.cargo/bin/rhd)
+  n1: 4096 0x1182C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/.cargo/bin/rhd)
+   n1: 4096 0x120438: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hd57e864ac3dc4127E.llvm.5645047508652013464 (in /home/markel/.cargo/bin/rhd)
+    n1: 4096 0x18C4F0: std::rt::lang_start_internal (in /home/markel/.cargo/bin/rhd)
+     n0: 4096 0x11D404: main (in /home/markel/.cargo/bin/rhd)
+ n1: 1024 0x1160B1: std::sys_common::once::futex::Once::call (in /home/markel/.cargo/bin/rhd)
+  n1: 1024 0x115809: std::sync::once_lock::OnceLock<T>::initialize (in /home/markel/.cargo/bin/rhd)
+   n1: 1024 0x190D78: std::io::stdio::stdout (in /home/markel/.cargo/bin/rhd)
+    n1: 1024 0x11EE18: rhd::dump (in /home/markel/.cargo/bin/rhd)
+     n1: 1024 0x11C84F: rhd::main (in /home/markel/.cargo/bin/rhd)
+      n1: 1024 0x1182C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/.cargo/bin/rhd)
+       n1: 1024 0x120438: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hd57e864ac3dc4127E.llvm.5645047508652013464 (in /home/markel/.cargo/bin/rhd)
+        n1: 1024 0x18C4F0: std::rt::lang_start_internal (in /home/markel/.cargo/bin/rhd)
+         n0: 1024 0x11D404: main (in /home/markel/.cargo/bin/rhd)
+ n0: 89 in 28 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=19
+#-----------
+time=9267675234
+mem_heap_B=8475
+mem_heap_extra_B=125
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=10005113346
+mem_heap_B=30835
+mem_heap_extra_B=125
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=10433913383
+mem_heap_B=11681
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=10963761955
+mem_heap_B=18073
+mem_heap_extra_B=103
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=11626073171
+mem_heap_B=30881
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=12288383664
+mem_heap_B=18049
+mem_heap_extra_B=135
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=13083156744
+mem_heap_B=30881
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=13480543616
+mem_heap_B=18081
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=13877930854
+mem_heap_B=11689
+mem_heap_extra_B=95
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=14407780408
+mem_heap_B=18073
+mem_heap_extra_B=103
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=14937629099
+mem_heap_B=18105
+mem_heap_extra_B=103
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=15335015452
+mem_heap_B=6849
+mem_heap_extra_B=135
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=15864864366
+mem_heap_B=6875
+mem_heap_extra_B=125
+mem_stacks_B=0
+heap_tree=detailed
+n4: 6875 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4096 0x11C7C6: rhd::main (in /home/markel/.cargo/bin/rhd)
+  n1: 4096 0x1182C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/.cargo/bin/rhd)
+   n1: 4096 0x120438: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hd57e864ac3dc4127E.llvm.5645047508652013464 (in /home/markel/.cargo/bin/rhd)
+    n1: 4096 0x18C4F0: std::rt::lang_start_internal (in /home/markel/.cargo/bin/rhd)
+     n0: 4096 0x11D404: main (in /home/markel/.cargo/bin/rhd)
+ n2: 1648 0x117A81: _ZN5alloc7raw_vec11finish_grow17h308f662c1e01f5efE.llvm.4612843667029046544 (in /home/markel/.cargo/bin/rhd)
+  n1: 1600 0x1140D1: alloc::raw_vec::RawVec<T,A>::reserve::do_reserve_and_handle (in /home/markel/.cargo/bin/rhd)
+   n2: 1600 0x11FE55: <alloc::string::String as core::fmt::Write>::write_str (in /home/markel/.cargo/bin/rhd)
+    n1: 1600 0x1B3F4F: core::fmt::write (in /home/markel/.cargo/bin/rhd)
+     n1: 1600 0x11F6F6: rhd::dump (in /home/markel/.cargo/bin/rhd)
+      n1: 1600 0x11C84F: rhd::main (in /home/markel/.cargo/bin/rhd)
+       n1: 1600 0x1182C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/.cargo/bin/rhd)
+        n1: 1600 0x120438: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hd57e864ac3dc4127E.llvm.5645047508652013464 (in /home/markel/.cargo/bin/rhd)
+         n1: 1600 0x18C4F0: std::rt::lang_start_internal (in /home/markel/.cargo/bin/rhd)
+          n0: 1600 0x11D404: main (in /home/markel/.cargo/bin/rhd)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+  n0: 48 in 2 places, all below massif's threshold (1.00%)
+ n1: 1024 0x1160B1: std::sys_common::once::futex::Once::call (in /home/markel/.cargo/bin/rhd)
+  n1: 1024 0x115809: std::sync::once_lock::OnceLock<T>::initialize (in /home/markel/.cargo/bin/rhd)
+   n1: 1024 0x190D78: std::io::stdio::stdout (in /home/markel/.cargo/bin/rhd)
+    n1: 1024 0x11EE18: rhd::dump (in /home/markel/.cargo/bin/rhd)
+     n1: 1024 0x11C84F: rhd::main (in /home/markel/.cargo/bin/rhd)
+      n1: 1024 0x1182C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/.cargo/bin/rhd)
+       n1: 1024 0x120438: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hd57e864ac3dc4127E.llvm.5645047508652013464 (in /home/markel/.cargo/bin/rhd)
+        n1: 1024 0x18C4F0: std::rt::lang_start_internal (in /home/markel/.cargo/bin/rhd)
+         n0: 1024 0x11D404: main (in /home/markel/.cargo/bin/rhd)
+ n0: 107 in 28 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=32
+#-----------
+time=16394712956
+mem_heap_B=11681
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=16792099770
+mem_heap_B=30881
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=17586670359
+mem_heap_B=30889
+mem_heap_extra_B=95
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=18182598615
+mem_heap_B=11689
+mem_heap_extra_B=95
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=18778526473
+mem_heap_B=18035
+mem_heap_extra_B=125
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=19573097584
+mem_heap_B=30849
+mem_heap_extra_B=135
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=20367668182
+mem_heap_B=30881
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=20963595956
+mem_heap_B=11657
+mem_heap_extra_B=127
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=21758166111
+mem_heap_B=18081
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=22155451890
+mem_heap_B=6857
+mem_heap_extra_B=127
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=22751379335
+mem_heap_B=18049
+mem_heap_extra_B=135
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=23148664224
+mem_heap_B=6105
+mem_heap_extra_B=103
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=23744592190
+mem_heap_B=18049
+mem_heap_extra_B=135
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=24539162833
+mem_heap_B=11641
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=25135090701
+mem_heap_B=18057
+mem_heap_extra_B=127
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=25731018586
+mem_heap_B=30841
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=26326946289
+mem_heap_B=11681
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=26724231652
+mem_heap_B=30873
+mem_heap_extra_B=103
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=27051982232
+mem_heap_B=18057
+mem_heap_extra_B=127
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=27379733105
+mem_heap_B=18041
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=27707484137
+mem_heap_B=11681
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=detailed
+n4: 11681 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 6456 0x117A81: _ZN5alloc7raw_vec11finish_grow17h308f662c1e01f5efE.llvm.4612843667029046544 (in /home/markel/.cargo/bin/rhd)
+  n1: 6408 0x1140D1: alloc::raw_vec::RawVec<T,A>::reserve::do_reserve_and_handle (in /home/markel/.cargo/bin/rhd)
+   n2: 6408 0x11FE55: <alloc::string::String as core::fmt::Write>::write_str (in /home/markel/.cargo/bin/rhd)
+    n1: 6400 0x1B3F4F: core::fmt::write (in /home/markel/.cargo/bin/rhd)
+     n1: 6400 0x11F6F6: rhd::dump (in /home/markel/.cargo/bin/rhd)
+      n1: 6400 0x11C84F: rhd::main (in /home/markel/.cargo/bin/rhd)
+       n1: 6400 0x1182C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/.cargo/bin/rhd)
+        n1: 6400 0x120438: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hd57e864ac3dc4127E.llvm.5645047508652013464 (in /home/markel/.cargo/bin/rhd)
+         n1: 6400 0x18C4F0: std::rt::lang_start_internal (in /home/markel/.cargo/bin/rhd)
+          n0: 6400 0x11D404: main (in /home/markel/.cargo/bin/rhd)
+    n0: 8 in 2 places, all below massif's threshold (1.00%)
+  n0: 48 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x11C7C6: rhd::main (in /home/markel/.cargo/bin/rhd)
+  n1: 4096 0x1182C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/.cargo/bin/rhd)
+   n1: 4096 0x120438: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hd57e864ac3dc4127E.llvm.5645047508652013464 (in /home/markel/.cargo/bin/rhd)
+    n1: 4096 0x18C4F0: std::rt::lang_start_internal (in /home/markel/.cargo/bin/rhd)
+     n0: 4096 0x11D404: main (in /home/markel/.cargo/bin/rhd)
+ n1: 1024 0x1160B1: std::sys_common::once::futex::Once::call (in /home/markel/.cargo/bin/rhd)
+  n1: 1024 0x115809: std::sync::once_lock::OnceLock<T>::initialize (in /home/markel/.cargo/bin/rhd)
+   n1: 1024 0x190D78: std::io::stdio::stdout (in /home/markel/.cargo/bin/rhd)
+    n1: 1024 0x11EE18: rhd::dump (in /home/markel/.cargo/bin/rhd)
+     n1: 1024 0x11C84F: rhd::main (in /home/markel/.cargo/bin/rhd)
+      n1: 1024 0x1182C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/.cargo/bin/rhd)
+       n1: 1024 0x120438: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hd57e864ac3dc4127E.llvm.5645047508652013464 (in /home/markel/.cargo/bin/rhd)
+        n1: 1024 0x18C4F0: std::rt::lang_start_internal (in /home/markel/.cargo/bin/rhd)
+         n0: 1024 0x11D404: main (in /home/markel/.cargo/bin/rhd)
+ n0: 105 in 28 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=53
+#-----------
+time=28035234753
+mem_heap_B=8457
+mem_heap_extra_B=127
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=28362985731
+mem_heap_B=30913
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=28690736528
+mem_heap_B=30849
+mem_heap_extra_B=135
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=29018487583
+mem_heap_B=18057
+mem_heap_extra_B=127
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=29346238349
+mem_heap_B=11635
+mem_heap_extra_B=125
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=29673989764
+mem_heap_B=30889
+mem_heap_extra_B=95
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=30001740446
+mem_heap_B=18113
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=30329491534
+mem_heap_B=8449
+mem_heap_extra_B=135
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=30657242585
+mem_heap_B=30881
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=30984993269
+mem_heap_B=18089
+mem_heap_extra_B=95
+mem_stacks_B=0
+heap_tree=detailed
+n4: 18089 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 12880 0x117A81: _ZN5alloc7raw_vec11finish_grow17h308f662c1e01f5efE.llvm.4612843667029046544 (in /home/markel/.cargo/bin/rhd)
+  n1: 12800 0x1140D1: alloc::raw_vec::RawVec<T,A>::reserve::do_reserve_and_handle (in /home/markel/.cargo/bin/rhd)
+   n2: 12800 0x11FE55: <alloc::string::String as core::fmt::Write>::write_str (in /home/markel/.cargo/bin/rhd)
+    n1: 12800 0x1B3F4F: core::fmt::write (in /home/markel/.cargo/bin/rhd)
+     n1: 12800 0x11F6F6: rhd::dump (in /home/markel/.cargo/bin/rhd)
+      n1: 12800 0x11C84F: rhd::main (in /home/markel/.cargo/bin/rhd)
+       n1: 12800 0x1182C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/.cargo/bin/rhd)
+        n1: 12800 0x120438: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hd57e864ac3dc4127E.llvm.5645047508652013464 (in /home/markel/.cargo/bin/rhd)
+         n1: 12800 0x18C4F0: std::rt::lang_start_internal (in /home/markel/.cargo/bin/rhd)
+          n0: 12800 0x11D404: main (in /home/markel/.cargo/bin/rhd)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+  n0: 80 in 2 places, all below massif's threshold (1.00%)
+ n1: 4096 0x11C7C6: rhd::main (in /home/markel/.cargo/bin/rhd)
+  n1: 4096 0x1182C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/.cargo/bin/rhd)
+   n1: 4096 0x120438: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hd57e864ac3dc4127E.llvm.5645047508652013464 (in /home/markel/.cargo/bin/rhd)
+    n1: 4096 0x18C4F0: std::rt::lang_start_internal (in /home/markel/.cargo/bin/rhd)
+     n0: 4096 0x11D404: main (in /home/markel/.cargo/bin/rhd)
+ n1: 1024 0x1160B1: std::sys_common::once::futex::Once::call (in /home/markel/.cargo/bin/rhd)
+  n1: 1024 0x115809: std::sync::once_lock::OnceLock<T>::initialize (in /home/markel/.cargo/bin/rhd)
+   n1: 1024 0x190D78: std::io::stdio::stdout (in /home/markel/.cargo/bin/rhd)
+    n1: 1024 0x11EE18: rhd::dump (in /home/markel/.cargo/bin/rhd)
+     n1: 1024 0x11C84F: rhd::main (in /home/markel/.cargo/bin/rhd)
+      n1: 1024 0x1182C2: std::sys_common::backtrace::__rust_begin_short_backtrace (in /home/markel/.cargo/bin/rhd)
+       n1: 1024 0x120438: _ZN3std2rt10lang_start28_$u7b$$u7b$closure$u7d$$u7d$17hd57e864ac3dc4127E.llvm.5645047508652013464 (in /home/markel/.cargo/bin/rhd)
+        n1: 1024 0x18C4F0: std::rt::lang_start_internal (in /home/markel/.cargo/bin/rhd)
+         n0: 1024 0x11D404: main (in /home/markel/.cargo/bin/rhd)
+ n0: 89 in 28 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=63
+#-----------
+time=31312744234
+mem_heap_B=8481
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=31640495080
+mem_heap_B=30875
+mem_heap_extra_B=125
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=31968246116
+mem_heap_B=30857
+mem_heap_extra_B=127
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=32295996698
+mem_heap_B=18049
+mem_heap_extra_B=111
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=32623747423
+mem_heap_B=18073
+mem_heap_extra_B=103
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=32951498585
+mem_heap_B=30849
+mem_heap_extra_B=135
+mem_stacks_B=0
+heap_tree=empty

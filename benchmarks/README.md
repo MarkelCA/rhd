@@ -26,12 +26,28 @@ Vendor ID:               GenuineIntel
     CPU min MHz:         400,0000
 ```
 ## Time
+These benchmarks have been performed using the `time` command and the [hyperfine](https://github.com/sharkdp/hyperfine) benchmarking tool.
+### `time` command
 ```bash
 rhd ~/awscliv2.zip  2,65s user 1,80s system 96% cpu 4,608 total
 ```
 Comparison with `xxd`:
 ```bash
-xxd ~/awscliv2.zip  1,42s user 3,36s system 92% cpu 5,167 total
+xxd ~/awscliv2.zip  1,42s user 3,36s system 92% cpu 5,067 total
+```
+### Hyperfine
+```bash
+$ hyperfine 'rhd ~/awscliv2.zip'
+Benchmark 1: rhd ~/awscliv2.zip
+  Time (mean ± σ):      2.392 s ±  0.011 s    [User: 2.380 s, System: 0.012 s]
+  Range (min … max):    2.379 s …  2.416 s    10 runs
+```
+Comparison with `xxd`:
+```bash
+$ hyperfine 'xxd ~/awscliv2.zip'
+Benchmark 1: xxd ~/awscliv2.zip
+  Time (mean ± σ):     639.0 ms ±   4.0 ms    [User: 621.2 ms, System: 17.6 ms]
+  Range (min … max):   636.2 ms … 650.0 ms    10 runs
 ```
 ## Memory
 These benchmarks have been performed using [Valgrind](https://valgrind.org/) and their purpose is to measure the memory usage of the hex dumper.
