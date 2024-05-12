@@ -6,7 +6,7 @@ use std::fmt::Write as FmtWrite;
 pub const BATCH_CHUNK_SIZE: usize = 4096;
 const LINE_CHUNK_SIZE: usize = 16;
 
-pub fn dump(mut b: BufReader<File>, filesize: u64) {
+pub fn dump(mut b: BufReader<File>) {
     let mut line = 0;
     let mut lock = io::stdout().lock();
 
@@ -22,16 +22,17 @@ pub fn dump(mut b: BufReader<File>, filesize: u64) {
         let mut chunk_lines = String::new();
 
         for mut c in buffer_chunk.chunks(LINE_CHUNK_SIZE) {
-            let bytes_pending = 
-                if filesize > bytes_printed {(filesize - bytes_printed) as usize } 
-                else {0};
-
-            if bytes_pending < LINE_CHUNK_SIZE {
-                c = &c[..bytes_pending];
+            if bytes_printed as u64 >= bytes_chunk as u64 {
+                break;
             }
 
-            if bytes_printed >= bytes_chunk as u64 {
-                break;
+            let line_length = 
+                if bytes_printed + LINE_CHUNK_SIZE > bytes_chunk {bytes_chunk - bytes_printed} 
+                else {LINE_CHUNK_SIZE};
+
+
+            if bytes_printed + LINE_CHUNK_SIZE > bytes_chunk {
+                c = &c[..line_length];
             }
 
             let mut hex_line   = String::new();
@@ -58,7 +59,7 @@ pub fn dump(mut b: BufReader<File>, filesize: u64) {
             }
             write!(chunk_lines,"{:0>8x}: {:<40}  {}\n", line*LINE_CHUNK_SIZE, hex_line,ascii_line).unwrap();
             line += 1;
-            bytes_printed += LINE_CHUNK_SIZE as u64;
+            bytes_printed += line_length;
         }
         writeln!(lock,"{}",chunk_lines).unwrap();
     }

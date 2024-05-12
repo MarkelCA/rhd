@@ -17,8 +17,7 @@ fn main() {
         .context(format!("Reading file {}",args.file_path))
         .expect("Provided file not found");
 
-    let filesize = f.metadata().unwrap().len();
     let b = BufReader::with_capacity(rhd::BATCH_CHUNK_SIZE, f);
 
-    rhd::dump(b,filesize);
+    rhd::dump(b);
 }
