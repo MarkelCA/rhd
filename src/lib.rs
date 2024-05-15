@@ -4,8 +4,18 @@ use std::fmt::Write as FmtWrite;
 pub const BATCH_CHUNK_SIZE: usize = 4096;
 const LINE_CHUNK_SIZE: usize = 16;
 
+pub mod format;
 
-pub fn dump<T: Read>(mut b: T) {
+pub struct Args {
+    pub file_path: Option<String>,
+    pub format: format::LineNumberFormat,
+}
+
+pub fn dump<T: Read>(mut b: T, args: Args) {
+    match args.format {
+        format::LineNumberFormat::Hexadecimal => println!("hex!"),
+        format::LineNumberFormat::Decimal => println!("dec!"),
+    }
     let mut line = 0;
     let mut lock = io::stdout().lock();
 
