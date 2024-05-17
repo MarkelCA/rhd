@@ -1,21 +1,19 @@
 use std::io::{self,Read,Write};
 use std::fmt::Write as FmtWrite;
+use format::LineNumberFormat;
 
 pub const BATCH_CHUNK_SIZE: usize = 4096;
 const LINE_CHUNK_SIZE: usize = 16;
 
 pub mod format;
 
+
 pub struct Args {
     pub file_path: Option<String>,
-    pub format: format::LineNumberFormat,
+    pub format: LineNumberFormat,
 }
 
-pub fn dump<T: Read>(mut b: T, args: Args) {
-    match args.format {
-        format::LineNumberFormat::Hexadecimal => println!("hex!"),
-        format::LineNumberFormat::Decimal => println!("dec!"),
-    }
+pub fn dump<T: Read>(mut b: T, args: Args) -> Result<(),io::Error> {
     let mut line = 0;
     let mut lock = io::stdout().lock();
 
@@ -25,7 +23,7 @@ pub fn dump<T: Read>(mut b: T, args: Args) {
         let bytes_chunk = b.read(buffer_chunk).expect("Failed reading the byte buffer");
 
         if bytes_chunk == 0 {
-            break;
+            return Ok(());
         }
 
         let mut chunk_lines = String::new();
@@ -66,11 +64,17 @@ pub fn dump<T: Read>(mut b: T, args: Args) {
                 }
                 hex_line.push_str(&byte_pair_str);
             }
-            write!(chunk_lines,"{:0>8x}: {:<40}  {}\n", line*LINE_CHUNK_SIZE, hex_line,ascii_line).unwrap();
+
+            if args.format == LineNumberFormat::Decimal {
+                write!(chunk_lines,"{:0>8}: {:<40}  {}\n", line*LINE_CHUNK_SIZE, hex_line,ascii_line).unwrap();
+            } else {
+                write!(chunk_lines,"{:0>8x}: {:<40}  {}\n", line*LINE_CHUNK_SIZE, hex_line,ascii_line).unwrap();
+            }
+
             line += 1;
             bytes_printed += line_length;
         }
-        writeln!(lock,"{}",chunk_lines).unwrap();
+        writeln!(lock,"{}",chunk_lines)?
     }
 }
 

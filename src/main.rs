@@ -38,5 +38,15 @@ fn main() {
         None => BufReader::with_capacity(rhd::BATCH_CHUNK_SIZE, Box::new(io::stdin())),
     };
 
-    rhd::dump(reader, args.to_args());
+    let result = rhd::dump(reader, args.to_args());
+
+    match result {
+        Ok(_) => (),
+        Err(e) => {
+            match e.kind() {
+                io::ErrorKind::BrokenPipe => (),
+                _ => eprintln!("Error: {}", e),
+            }
+        },
+    }
 }
