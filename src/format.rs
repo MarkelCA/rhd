@@ -1,4 +1,4 @@
-use clap::{ValueEnum,builder::PossibleValue};
+use clap::{builder::PossibleValue, ValueEnum};
 
 #[derive(Copy, Clone, PartialEq, Eq, PartialOrd, Ord, Debug)]
 pub enum LineNumberFormat {
@@ -41,4 +41,3 @@ impl std::str::FromStr for LineNumberFormat {
         Err(format!("invalid variant: {s}"))
     }
 }
-
