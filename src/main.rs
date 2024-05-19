@@ -28,21 +28,20 @@ impl CliArgs {
 fn main() {
     let args = CliArgs::parse();
 
-    let file_path: String = args.file_path.clone().unwrap();
-    let path = Path::new(&file_path);
-
-    if !path.exists() {
-        eprintln!("Error: {} does not exist", file_path);
-        std::process::exit(1);
-    }
-
-    if path.is_dir() {
-        eprintln!("Error: {} is a directory", file_path);
-        std::process::exit(1);
-    }
-
     let reader: BufReader<Box<dyn Read>> = match args.file_path.clone() {
         Some(file_path) => {
+            let path = Path::new(&file_path);
+
+            if !path.exists() {
+                eprintln!("Error: {} does not exist", file_path);
+                std::process::exit(1);
+            }
+
+            if path.is_dir() {
+                eprintln!("Error: {} is a directory", file_path);
+                std::process::exit(1);
+            }
+
             let f = File::open(&file_path)
                 .context(format!("Reading file {}", file_path))
                 .expect("Provided file not found");
