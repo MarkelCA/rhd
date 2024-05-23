@@ -13,14 +13,27 @@ $ cargo install --path .
 $ rhd --help
 Rust Hex Dump. A simple hex dump utility written in Rust.
 
-Usage: rhd [FILE_PATH]
+Usage: rhd [OPTIONS] [FILE_PATH]
 
 Arguments:
-  [FILE_PATH]  Input file to read from. If not provided reads from stdin
+  [FILE_PATH]
+          Input file to read from. If not provided reads from stdin
 
 Options:
-  -h, --help     Print help
-  -V, --version  Print version
+  -f, --format <FORMAT>
+          The format for the line numbers. Default is hexadecimal
+
+          [default: hex]
+
+          Possible values:
+          - hex: Hexadecimal format
+          - dec: Decimal format
+
+  -h, --help
+          Print help (see a summary with '-h')
+
+  -V, --version
+          Print version
 ```
 ## Examples
 Text file
